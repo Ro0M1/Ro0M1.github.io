@@ -1,0 +1,189 @@
+body {
+    background-image : url(../image/og_return.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+#logo{
+    margin: auto;
+    display: flex;
+    width: 15%;
+}
+
+
+.play{
+    padding: 20px 60px;
+    display: flex;
+    margin: auto;
+    background-color:white ;
+    font-family: cambria;
+    font-size: 2rem;
+    color:rgb(208, 255, 0);
+    background-color: rgb(129, 0, 0);
+    border: 2px solid rgb(51, 54, 69);
+    border-radius: 3%;
+    box-shadow: 0 20px 50px rgb(23, 32, 90);
+    transition: 0.4s;
+}
+
+.play:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+h2{
+    font-family: arial;
+    display: flex;
+    justify-content: center;
+}
+.EnCard {
+    top: 5%;
+    right: 5%;
+    position: fixed;
+    width: 350px;
+    height: 90%;
+    background-color:rgba(55, 51, 51, 0.3);
+    border: solid rgb(187, 161, 161) 3px;
+    border-radius: 3%;
+    overflow-y: scroll;
+    scrollbar-color: dark;
+}
+
+select{
+    width: 100%;
+}
+#new{
+    display: flex;
+    margin: auto;
+    width: 300px;
+    height: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#création:hover{
+    transform: scale(0.9);
+}
+
+.card{
+    border: black 1px solid;
+    display: block;
+}
+
+#msgValid{
+    color: green;
+    font-weight: bold;
+    font-family: arial;
+}
+#msgRefus{
+    color: red;
+    font-weight: bold;
+    font-family: arial;
+}
+
+.perso{
+    width: 100%;
+    height: 150px;
+    border-bottom: black solid 1px;
+    border-radius: 3%;
+    cursor: pointer;
+    padding-top: 10px;
+    transition: 0.4s;
+    opacity: 0.8;
+}
+.perso:hover{
+    background-color: rgb(151, 151, 82);
+}
+.name{
+    color: yellow;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+    width: 50%;
+    margin-left: 5%;
+}
+.classe{
+    color: white;
+    font-family: georgia;
+    font-weight: bold;
+    font-size: 17px;
+    width: 50%;
+    margin-left: 5%;
+}
+
+.test{
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.persoInactif{
+    display: none;
+}
+
+
+.imgIcon{
+    width: 30%;
+    display:flex;
+    float: right;
+    position: relative;
+    bottom: 50%;
+    
+
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 25%;
+}
+
+#btnSuppr{
+    width: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#btnSuppr:hover{
+    transform: scale(1.2);
+}
+#btnEdit{
+    width: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#btnEdit:hover{
+    transform: scale(1.2);
+}
+
+#newCharacter{
+    
+    width: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#newCharacter:hover{
+    transform: scale(0.9);
+}
+
+
+.container{
+    width:20%;
+    margin-left:10% ;
+    display: none;
+    
+}
+legend{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: arial;
+}
+
+#Character{
+    width: 50%;
+}
+
+label{
+    font-family: georgia;
+    display: block;
+}
