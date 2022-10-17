@@ -35,6 +35,7 @@ h2{
     font-family: arial;
     display: flex;
     justify-content: center;
+    color: white; 
 }
 .EnCard {
     top: 5%;
@@ -66,8 +67,20 @@ select{
 }
 
 .card{
-    border: black 1px solid;
-    display: block;
+    display: none;
+}
+
+#C{
+    margin-top: 2px;
+    color: rgb(204, 204, 55);
+    font-family: arial;
+    font-weight: bold;
+    background-color: rgb(112, 0, 0);
+    border: 3px grey solid;
+    width: 70px;
+    padding: 5px;
+    cursor: pointer;
+    
 }
 
 #msgValid{
@@ -157,7 +170,7 @@ select{
 
 #newCharacter{
     
-    width: 50%;
+    width: 200px;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -180,10 +193,30 @@ legend{
 }
 
 #Character{
-    width: 50%;
+    width: 200px;
 }
 
 label{
     font-family: georgia;
     display: block;
+}
+@media (max-width:1000px){
+    #logo{
+        margin: 5% 0 5% 10%;
+        width:240px ;
+    }
+}
+@media (max-width:710px){
+    #logo{
+        margin-left: 0;
+    }
+    .container{
+        margin-left: 0;
+    }
+    .EnCard{
+        width: 40%;
+    }
+    .imgIcon{
+        width:100px;
+    }
 }

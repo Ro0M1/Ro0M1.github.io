@@ -6,7 +6,7 @@ let classe = document.getElementById("Character");
 let i = document.createElement("img")
 let card = document.getElementById("card");
 i.className = "imgIcon"
-let data = []
+let data = [];
 
 
 function newChar(){
@@ -47,6 +47,7 @@ function collectData()
     })
     console.log(data)
     createchar();
+    nom.value=""
     localStorage.setItem("data",JSON.stringify(data));  
   }
 
@@ -76,7 +77,6 @@ function collectData()
       <img src="image/edit.png" alt="" onclick="edit(this)" id="btnEdit">
     </div>
     `;
-    nom.value=""
     // d.setAttribute("onclick","choixPerso(\""+data.classe+"\")")
     })
     // ReStart();
@@ -147,12 +147,12 @@ function test(){
   }
 
 function edit(e){
-  nom.value = "";
-  classe.value = "";
+   let c = e.parentElement.parentElement.id;
+   nom.value = data[c].namer;
+   classe.value = data[c].classer;
   deleteChar(e);
+ }
 
-}
-
-//   function fullscreen(){
-//     document.documentElement.requestFullscreen()
-// }
+   function fullscreen(){
+     document.documentElement.requestFullscreen()
+ }
